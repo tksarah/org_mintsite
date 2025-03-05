@@ -6,7 +6,8 @@ import { Wallet, ChevronDown } from "lucide-react";
 export function Header(): JSX.Element {
   return (
     <header className={styles.wrapper}>
-      <div className={styles.logo}>LOGO</div>
+      <div className={styles.logo}><img src='/LiON.jpg' />2025/3/18 Meetup</div>
+      <div className={styles.text}>はじめてでもわかる！web3の基礎講座＆簡単ワークショップ</div>
       <ConnectButton.Custom>
         {({
           account,

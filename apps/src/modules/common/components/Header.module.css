@@ -1,7 +1,7 @@
 .wrapper {
   padding: 1rem 2rem;
   position: fixed;
-  top: 0;
+  top: 10px;
   left: 0;
   right: 0;
   display: flex;
@@ -14,6 +14,19 @@
 .logo {
   color: #ffffff;
   font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+}
+
+.logo img {
+  width: 5%;
+  height: 5%;
+  margin-right: 10px;
+}
+
+.text {
+  color: #ffffff;
+  font-size: 20pt;
   font-weight: bold;
 }
 

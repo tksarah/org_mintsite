@@ -100,7 +100,7 @@
 
 .nftImage {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/4;
   border-radius: 10px;
   object-fit: cover;
 }

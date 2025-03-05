@@ -5,10 +5,13 @@ export function Footer(): JSX.Element {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.mainRow}>
-          <div className={styles.logo}>LOGO</div>
+      <div className={styles.mainRow}>
+          <div className={styles.links}>
+            <div className={styles.copyright}>© 2025 LinuC Open Network. All rights reserved.</div>
+          </div>
+	  {/* <div className={styles.logo}>LOGO</div> */}
           <div className={styles.social}>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+	  {/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <InstagramIcon />
             </a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -16,20 +19,22 @@ export function Footer(): JSX.Element {
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <YoutubeIcon />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            </a>*/}
+            <a href="https://linuc.community/" target="_blank" rel="noopener noreferrer" aria-label="Community">
+              <HomeIcon />
+	    </a>
+            <a href="https://x.com/linuc_community" target="_blank" rel="noopener noreferrer" aria-label="X">
               <TwitterIcon />
             </a>
           </div>
         </div>
-        
-        <div className={styles.bottomRow}>
+	{/* <div className={styles.bottomRow}>
           <div className={styles.links}>
-            <div className={styles.copyright}>© 2024 Demo</div>
-            <Link href="/terms">利用規約</Link>
-            <Link href="/privacy">プライバシポリシー</Link>
+            <div className={styles.copyright}>© 2025 LinuC Open Network. All rights reserved.</div>
+	    <Link href="/terms">利用規約</Link>
+	    <Link href="/privacy">プライバシポリシー</Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
@@ -58,3 +63,10 @@ const TwitterIcon = () => (
     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
   </svg>
 );
+
+const HomeIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+  </svg>
+);
+

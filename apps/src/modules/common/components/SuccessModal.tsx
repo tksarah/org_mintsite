@@ -17,7 +17,7 @@ export function SuccessModal({ isOpen, onClose, nftName, nftImage, txHash }: Suc
       <div className={styles.modalContent}>
         <button onClick={onClose} className={styles.closeButton}>×</button>
         <div className={styles.successIcon}>✓</div>
-        <h2>ミントに成功しました</h2>
+        <h2>参加証の取得（NFTのミント）に成功しました</h2>
         
         <div className={styles.nftPreview}>
           <img src={nftImage || '/placeholder.jpg'} alt={nftName} />

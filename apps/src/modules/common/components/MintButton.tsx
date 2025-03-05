@@ -14,7 +14,7 @@ export function MintButton({ isPending, isDisabled, onClick }: MintButtonProps) 
       onClick={onClick}
       type="button"
     >
-      {isPending ? "Confirming..." : "NFTミント"}
+      {isPending ? "Confirming..." : "参加証の取得（NFTをミント）"}
     </button>
   );
 }

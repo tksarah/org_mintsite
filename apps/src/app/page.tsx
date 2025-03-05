@@ -168,11 +168,11 @@ export default function Home(): JSX.Element {
   function textNftBalances(bal: string): string {
     const balance = Number(bal);
     if (balance > 1) {
-      return `あなた${balance}つのNFTを所有しています`;
+      return `あなた${balance}つの参加証を所有しています`;
     } else if (balance === 1) {
-      return `あなた${balance}つのNFTを所有しています`;
+      return `あなた${balance}つの参加証を所有しています`;
     } else {
-      return `NFTをまだ所有していません`;
+      return `参加証をまだ所有していません`;
     }
   }
   useEffect(() => {
@@ -216,7 +216,7 @@ export default function Home(): JSX.Element {
       <br />
 
       {!walletAddress && (
-        <div className={styles.notConnectedLabel}>ウォレットに接続して、NFT を取得しよう</div>
+        <div className={styles.notConnectedLabel}>ウォレットに接続して、参加証（NFT） を取得しよう</div>
       )}
       <MintButton 
           isPending={isPending}
