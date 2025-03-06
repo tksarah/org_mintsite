@@ -216,7 +216,7 @@ export default function Home(): JSX.Element {
       <br />
 
       {!walletAddress && (
-        <div className={styles.notConnectedLabel}>ウォレットに接続して、参加証（NFT） を取得しよう</div>
+        <div className={styles.notConnectedLabel}>ウォレットを接続して、<br />参加証（NFT） を取得しよう</div>
       )}
       <MintButton 
           isPending={isPending}
