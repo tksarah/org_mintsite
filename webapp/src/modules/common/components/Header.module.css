@@ -1,0 +1,96 @@
+.wrapper {
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  border-bottom: 1px solid #6d30de;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.text {
+  color: #ffffff;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.wrapper :global(.connect-button) {
+  background: #6d30de !important;
+  border-radius: 12px !important;
+  padding: 12px 20px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease-in-out !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: white !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.wrapper :global(.connect-button:hover) {
+  transform: scale(1.05);
+  background: #7C3AED !important;
+}
+
+.walletIcon {
+  color: currentColor;
+}
+
+/* Style the connected state */
+.wrapper :global([data-testid="connect-button"]) {
+  border: 1px solid #333 !important;
+  border-radius: 12px !important;
+}
+
+/* Style the account balance display */
+.wrapper :global([data-testid="balance-display"]) {
+  background: rgba(139, 92, 246, 0.1) !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+}
+
+.wrapper :global(.account-button) {
+  background: transparent !important;
+  border-radius: 20px !important;
+  border: 1px solid #7C3AED !important;
+  padding: 12px 20px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease-in-out !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.wrapper :global(.chain-button) {
+  background: transparent !important;
+  border-radius: 12px !important;
+  padding: 12px 20px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease-in-out !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: white !important;
+  border: none !important;
+  cursor: pointer !important;
+}

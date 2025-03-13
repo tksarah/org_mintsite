@@ -6,7 +6,7 @@ import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 const NftModule = buildModule("NftModule", (m) => {
   const adminOwner = m.getAccount(0);
 
-  const nft = m.contract("DemoNFT", ["0xCcA55A052F2140541b6650093890A0a21405dCc7", "https://tan-worried-jay-256.mypinata.cloud/ipfs/bafybeigiphbjawielwcvit5lt6opr2yfsttxffbayxzf7tgmfsht4ibkvq/"]);
+  const nft = m.contract("BasicERC721", ["0xaae9c8b2B98D2a09C2d4689d8Dd538840643175C", "https://gray-electronic-capybara-902.mypinata.cloud/ipfs/bafybeiftple5bnu233kvqkbeteucgwicb6duiqtoymbtovxpe37scruori/"]);
 
   return { nft };
 });

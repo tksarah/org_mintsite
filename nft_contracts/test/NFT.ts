@@ -8,8 +8,8 @@ describe("NFT", function () {
   // and reset Hardhat Network to that snapshot in every test.
   async function deployFixture() {
     const [owner, otherAccount] = await hre.ethers.getSigners();
-    const Nft = await hre.ethers.getContractFactory("HogeNFT");
-    const nft = await Nft.deploy(owner);
+    const Nft = await hre.ethers.getContractFactory("BasicERC721");
+    const nft = await Nft.deploy(owner, "https://gray-electronic-capybara-902.mypinata.cloud/ipfs/bafybeiftple5bnu233kvqkbeteucgwicb6duiqtoymbtovxpe37scruori/");
     return { nft, owner, otherAccount };
   }
 
@@ -20,3 +20,4 @@ describe("NFT", function () {
     });
   });
 });
+
